@@ -9,15 +9,15 @@ class Topic(models.Model):
 class Web_page(models.Model):
     topic_name=models.ForeignKey(Topic,on_delete=models.CASCADE)
     name=models.CharField(max_length=100)
-    urls=models.URLField()
+    url=models.URLField()
     def __str__(self):
        return self.name
    
-class Acess_record(models.Model):
+class Accessrecord(models.Model):
     name=models.ForeignKey(Web_page,on_delete=models.CASCADE)
     author=models.CharField(max_length=100)
     date=models.DateField()
-    def __str__(self) -> str:
+    def __str__(self):
         return self.author
    
    

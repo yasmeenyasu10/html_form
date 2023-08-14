@@ -21,4 +21,6 @@ from app.views import *
 urlpatterns = [
     path("admin/", admin.site.urls),
     path('create_topic/',create_topic ,name='create_topic '),
+    path('webpage/',webpage,name='webpage'),
+    path('Create_ac/',Create_ac,name='Create_ac')
 ]

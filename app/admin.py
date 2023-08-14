@@ -4,4 +4,4 @@ from app.models import *
 # Register your models here.
 admin.site.register(Topic)
 admin.site.register(Web_page)
-admin.site.register(Acess_record)
+admin.site.register(Accessrecord)
